@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>membuat file index.html</title>
+    <title>kalkulator tambah</title>
 </head>
 <body>
-    <h1>belajar git SCM</h1>
+    <input type="number" id="angka1">
+    <input type="number" id="angka2">
+    <button onclick="hitungtambah()">HITUNG!</button>
+    <br/>
+    <p id="hasiloutput"></p>
+    <script>
+        function hitungtambah(){
+            var angka1 = document.getElementById('angka1').value;
+            var angka2 = document.getElementById('angka2').value;
+            var hasil = parseInt(angka1) + parseInt(angka2);
+            document.getElementById('hasiloutput').innerHTML = hasil;
+        }
+    </script>
+
 </body>
 </html>
